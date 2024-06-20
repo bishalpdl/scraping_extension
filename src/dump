@@ -1,0 +1,79 @@
+// import "./App.css";
+// import { DT2 } from "./data-extractor2";
+// // import DataExtractor from "./lib/data-extractor";
+// // import DataExtractor2 from "./data-extractor2";
+// // import extractorClassString, { Extractor } from "./lib/exet";
+
+// // What-Owe-Future-William-MacAskill/dp/1541618629
+// // www.amazon.com/What-We-Owe-the-Future/dp/B0B75SSFMZ
+
+// function App() {
+//   // function extractor(document: Document) {
+//   //   console.log(document.getElementById("productTitle"));
+//   // }
+
+//   function changeBackgroundColor(color: string) {
+//     function extractor(document: Document) {
+//       console.log("form inside");
+//       console.log(document.getElementById("productTitle"));
+
+//       DT2(document);
+//     }
+//     console.log("---------whole doc------------");
+//     console.log(document);
+
+//     console.log("---------body doc------------");
+//     console.log(document.body);
+
+//     console.log("------------title-----------");
+//     console.log(document.getElementById("productTitle"));
+
+//     console.log("----------real stuff----------------");
+
+//     extractor(document);
+
+//     document.body.style.backgroundColor = Math.random() < 0.5 ? "blue" : color;
+
+//     // console.log("---------whole doc------------");
+//     // console.log(document);
+
+//     // console.log("---------body doc------------");
+//     // console.log(document.body);
+
+//     // console.log("------------title-----------");
+//     // console.log(document.getElementById("productTitle"));
+
+//     // console.log("----------real stuff----------------");
+
+//     // extractor(document);
+
+//     // const de = new DataExtractor2(document);
+//     // de.extractData();
+//     // DataExtractor.extractFromDocument(document);
+
+//     // document.body.style.backgroundColor = Math.random() < 0.5 ? "blue" : color;
+
+//     // setTimeout(() => {
+//     //   // window.location.href = "wwww.google.com";
+//     // }, 2000);
+//   }
+
+//   const onClick = async () => {
+//     const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+//     chrome.scripting.executeScript<string[], void>({
+//       target: { tabId: tabs[0].id as number },
+//       args: ["red"],
+//       func: changeBackgroundColor,
+//     });
+//   };
+
+//   return (
+//     <div>
+//       <h1>Hello There</h1>
+
+//       <button onClick={onClick}>clickMe</button>
+//     </div>
+//   );
+// }
+
+// export default App;
